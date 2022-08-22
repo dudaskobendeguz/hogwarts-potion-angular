@@ -1,0 +1,12 @@
+<p>ingredients works!</p>
+<div class="ingredients">
+  <h2>Ingredients</h2>
+  <ul>
+    <li *ngFor="let ingredient of ingredients">
+      <div class="ingredient">
+        <p>ID: <span>{{ ingredient.id }}</span></p>
+        <p>NAME: <span>{{ ingredient.name }}</span></p>
+      </div>
+    </li>
+  </ul>
+</div>

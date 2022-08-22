@@ -1,0 +1,30 @@
+<p>recipes works!</p>
+<div class="recipes">
+  <h2>Recipes</h2>
+  <ul>
+    <li *ngFor="let recipe of recipes">
+      <div class="recipe">
+        <p>ID: <span>{{ recipe.id }}</span></p>
+        <p>NAME: <span>{{ recipe.name }}</span></p>
+        <h3>STUDENT</h3>
+        <div class="student">
+          <p>ID: {{ recipe.student.id }}</p>
+          <p>NAME: {{ recipe.student.name }}</p>
+          <p>HOUSE TYPE: {{ recipe.student.houseType }}</p>
+          <p>PET TYPE: {{ recipe.student.petType }}</p>
+        </div>
+        <h3>Ingredients</h3>
+        <div class="ingredients">
+          <ul>
+            <li *ngFor="let ingredient of recipe.ingredients">
+              <div class="ingredient">
+                <p>ID: <span>{{ ingredient.id }}</span></p>
+                <p>NAME: <span>{{ ingredient.name }}</span></p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
