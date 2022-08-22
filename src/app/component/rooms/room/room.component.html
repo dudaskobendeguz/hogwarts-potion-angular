@@ -1,0 +1,13 @@
+<div class="room" *ngIf="room">
+  <p>ID: <span>{{ room.id }}</span></p>
+  <p>NAME: <span>{{ room.name }}</span></p>
+  <p>CAPACITY: <span>{{ room.capacity }}/{{ room.residents.length }}</span></p>
+  <div class="students">
+    <h3>STUDENTS:</h3>
+    <ul>
+      <li *ngFor="let student of room.residents">
+        <app-student [student]="student"></app-student>
+      </li>
+    </ul>
+  </div>
+</div>

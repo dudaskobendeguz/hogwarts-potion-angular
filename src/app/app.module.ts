@@ -11,6 +11,7 @@ import { IngredientsComponent } from './component/ingredients/ingredients.compon
 import { RecipesComponent } from './component/recipes/recipes.component';
 import { PotionsComponent } from './component/potions/potions.component';
 import { StudentComponent } from './component/students/student/student.component';
+import { RoomComponent } from './component/rooms/room/room.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +23,7 @@ import { StudentComponent } from './component/students/student/student.component
     RecipesComponent,
     PotionsComponent,
     StudentComponent,
+    RoomComponent,
   ],
   imports: [
     BrowserModule,
