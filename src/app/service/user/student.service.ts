@@ -27,6 +27,17 @@ export class StudentService {
       );
   }
 
+  getStudent(id: number): Observable<Student> { {
+    const url = `${this.usersUrl}/${id}`
+    return this.http.get<Student>(url)
+      .pipe(
+        tap( (_) => this.log(`fethed student id=${id}(TAP)`)),
+        catchError(this.errorHandler.handleError<Student>(`getHero id=${id}`))
+      );
+  }
+
+  }
+
   private log(message: string): void {
     this.messageService.add(StudentService.name, message);
   }
