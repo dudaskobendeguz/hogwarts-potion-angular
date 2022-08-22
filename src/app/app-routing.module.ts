@@ -4,7 +4,7 @@ import {StudentsComponent} from "./component/students/students/students.componen
 import {RoomsComponent} from "./component/rooms/rooms/rooms.component";
 import {IngredientsComponent} from "./component/ingredients/ingredients/ingredients.component";
 import {RecipesComponent} from "./component/recipes/recipes/recipes.component";
-import {PotionsComponent} from "./component/potions/potions.component";
+import {PotionsComponent} from "./component/potions/potions/potions.component";
 
 
 const routes: Routes = [

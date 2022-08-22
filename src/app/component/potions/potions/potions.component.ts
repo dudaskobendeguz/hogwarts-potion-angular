@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Potion} from "../../model/potion";
-import {MessageService} from "../../service/message/message.service";
-import {PotionService} from "../../service/potion/potion.service";
+import {Potion} from "../../../model/potion";
+import {MessageService} from "../../../service/message/message.service";
+import {PotionService} from "../../../service/potion/potion.service";
 
 @Component({
   selector: 'app-potions',
