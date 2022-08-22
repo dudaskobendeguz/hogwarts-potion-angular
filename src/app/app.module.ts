@@ -10,6 +10,7 @@ import { RoomComponent } from './component/room/room/room.component';
 import { IngredientsComponent } from './component/ingredients/ingredients.component';
 import { RecipesComponent } from './component/recipes/recipes.component';
 import { PotionsComponent } from './component/potions/potions.component';
+import { StudentComponent } from './component/students/student/student.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { PotionsComponent } from './component/potions/potions.component';
     IngredientsComponent,
     RecipesComponent,
     PotionsComponent,
+    StudentComponent,
   ],
   imports: [
     BrowserModule,

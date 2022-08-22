@@ -6,15 +6,8 @@
       <div class="potion">
         <p>ID: <span>{{ potion.id }}</span></p>
         <p>NAME: <span>{{ potion.name }}</span></p>
-
-        <div class="student">
-          <h3>Student: </h3>
-          <p>ID: {{ potion.student.id }}</p>
-          <p>NAME: {{ potion.student.name }}</p>
-          <p>HOUSE TYPE: {{ potion.student.houseType }}</p>
-          <p>PET TYPE: {{ potion.student.petType }}</p>
-        </div>
-
+        <h3>Student:</h3>
+        <app-student [student]="potion.student"></app-student>
 
         <div class="ingredients" *ngIf="potion.ingredients.length > 0">
           <h3>Ingredients</h3>
@@ -32,14 +25,9 @@
         <div class="recipe" *ngIf="potion.recipe">
           <p>ID: <span>{{ potion.recipe.id }}</span></p>
           <p>NAME: <span>{{ potion.recipe.name }}</span></p>
-          <h3>STUDENT</h3>
-          <div class="student">
-            <p>ID: {{ potion.recipe.student.id }}</p>
-            <p>NAME: {{ potion.recipe.student.name }}</p>
-            <p>HOUSE TYPE: {{ potion.recipe.student.houseType }}</p>
-            <p>PET TYPE: {{ potion.recipe.student.petType }}</p>
-          </div>
 
+          <h3>Student:</h3>
+          <app-student [student]="potion.student"></app-student>
 
           <h3>Ingredients</h3>
           <div class="ingredients">

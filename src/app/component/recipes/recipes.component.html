@@ -6,13 +6,9 @@
       <div class="recipe">
         <p>ID: <span>{{ recipe.id }}</span></p>
         <p>NAME: <span>{{ recipe.name }}</span></p>
-        <h3>STUDENT</h3>
-        <div class="student">
-          <p>ID: {{ recipe.student.id }}</p>
-          <p>NAME: {{ recipe.student.name }}</p>
-          <p>HOUSE TYPE: {{ recipe.student.houseType }}</p>
-          <p>PET TYPE: {{ recipe.student.petType }}</p>
-        </div>
+        <h3>Student:</h3>
+        <app-student [student]="recipe.student"]></app-student>
+
         <h3>Ingredients</h3>
         <div class="ingredients">
           <ul>
