@@ -8,11 +8,12 @@ import { MessageComponent } from './component/message/message/message.component'
 import { AppRoutingModule } from './app-routing.module';
 import { RoomsComponent } from './component/rooms/rooms/rooms.component';
 import { IngredientsComponent } from './component/ingredients/ingredients/ingredients.component';
-import { RecipesComponent } from './component/recipes/recipes.component';
+import { RecipesComponent } from './component/recipes/recipes/recipes.component';
 import { PotionsComponent } from './component/potions/potions.component';
 import { StudentComponent } from './component/students/student/student.component';
 import { RoomComponent } from './component/rooms/room/room.component';
 import { IngredientComponent } from './component/ingredients/ingredient/ingredient.component';
+import { RecipeComponent } from './component/recipes/recipe/recipe.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { IngredientComponent } from './component/ingredients/ingredient/ingredie
     StudentComponent,
     RoomComponent,
     IngredientComponent,
+    RecipeComponent,
   ],
   imports: [
     BrowserModule,

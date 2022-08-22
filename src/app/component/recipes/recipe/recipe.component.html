@@ -1,0 +1,15 @@
+<div class="recipe" *ngIf="recipe">
+  <p>ID: <span>{{ recipe.id }}</span></p>
+  <p>NAME: <span>{{ recipe.name }}</span></p>
+  <h3>Student:</h3>
+  <app-student [student]="recipe.student"></app-student>
+
+  <h3>Ingredients</h3>
+  <div class="ingredients">
+    <ul>
+      <li *ngFor="let ingredient of recipe.ingredients">
+        <app-ingredient [ingredient]="ingredient"></app-ingredient>
+      </li>
+    </ul>
+  </div>
+</div>

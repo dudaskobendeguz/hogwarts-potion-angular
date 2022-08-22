@@ -1,0 +1,9 @@
+<p>recipes works!</p>
+<div class="recipes">
+  <h2>Recipes</h2>
+  <ul>
+    <li *ngFor="let recipe of recipes">
+      <app-recipe [recipe]="recipe"></app-recipe>
+    </li>
+  </ul>
+</div>

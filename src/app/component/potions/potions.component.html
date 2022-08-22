@@ -18,25 +18,8 @@
           </ul>
         </div>
 
-
-        <div class="recipe" *ngIf="potion.recipe">
-          <p>ID: <span>{{ potion.recipe.id }}</span></p>
-          <p>NAME: <span>{{ potion.recipe.name }}</span></p>
-
-          <h3>Student:</h3>
-          <app-student [student]="potion.student"></app-student>
-
-          <h3>Ingredients</h3>
-          <div class="ingredients">
-            <ul>
-              <li *ngFor="let ingredient of potion.recipe.ingredients">
-                <app-ingredient [ingredient]="ingredient"></app-ingredient>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-
+        <h3 *ngIf="potion.recipe">Recipe:</h3>
+        <app-recipe [recipe]="potion.recipe"></app-recipe>
         <h3>{{ potion.brewingStatus }}</h3>
       </div>
     </li>

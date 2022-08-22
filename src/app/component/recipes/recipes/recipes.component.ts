@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Recipe} from "../../model/recipe";
-import {MessageService} from "../../service/message/message.service";
-import {RecipeService} from "../../service/recipe/recipe.service";
+import {Recipe} from "../../../model/recipe";
+import {MessageService} from "../../../service/message/message.service";
+import {RecipeService} from "../../../service/recipe/recipe.service";
 
 @Component({
   selector: 'app-recipes',
