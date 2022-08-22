@@ -4,11 +4,11 @@ import {RoomService} from "../../../service/room/room.service";
 import {MessageService} from "../../../service/message/message.service";
 
 @Component({
-  selector: 'app-room',
-  templateUrl: './room.component.html',
-  styleUrls: ['./room.component.css']
+  selector: 'app-rooms',
+  templateUrl: './rooms.component.html',
+  styleUrls: ['./rooms.component.css']
 })
-export class RoomComponent implements OnInit {
+export class RoomsComponent implements OnInit {
   rooms: Room[] = []
 
   constructor(

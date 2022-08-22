@@ -6,7 +6,7 @@ import { StudentsComponent } from './component/students/students/students.compon
 import {HttpClientModule} from "@angular/common/http";
 import { MessageComponent } from './component/message/message/message.component';
 import { AppRoutingModule } from './app-routing.module';
-import { RoomComponent } from './component/room/room/room.component';
+import { RoomsComponent } from './component/rooms/rooms/rooms.component';
 import { IngredientsComponent } from './component/ingredients/ingredients.component';
 import { RecipesComponent } from './component/recipes/recipes.component';
 import { PotionsComponent } from './component/potions/potions.component';
@@ -17,7 +17,7 @@ import { StudentComponent } from './component/students/student/student.component
     AppComponent,
     StudentsComponent,
     MessageComponent,
-    RoomComponent,
+    RoomsComponent,
     IngredientsComponent,
     RecipesComponent,
     PotionsComponent,
