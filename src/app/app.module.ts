@@ -7,11 +7,12 @@ import {HttpClientModule} from "@angular/common/http";
 import { MessageComponent } from './component/message/message/message.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RoomsComponent } from './component/rooms/rooms/rooms.component';
-import { IngredientsComponent } from './component/ingredients/ingredients.component';
+import { IngredientsComponent } from './component/ingredients/ingredients/ingredients.component';
 import { RecipesComponent } from './component/recipes/recipes.component';
 import { PotionsComponent } from './component/potions/potions.component';
 import { StudentComponent } from './component/students/student/student.component';
 import { RoomComponent } from './component/rooms/room/room.component';
+import { IngredientComponent } from './component/ingredients/ingredient/ingredient.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RoomComponent } from './component/rooms/room/room.component';
     PotionsComponent,
     StudentComponent,
     RoomComponent,
+    IngredientComponent,
   ],
   imports: [
     BrowserModule,

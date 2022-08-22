@@ -13,10 +13,7 @@
         <div class="ingredients">
           <ul>
             <li *ngFor="let ingredient of recipe.ingredients">
-              <div class="ingredient">
-                <p>ID: <span>{{ ingredient.id }}</span></p>
-                <p>NAME: <span>{{ ingredient.name }}</span></p>
-              </div>
+              <app-ingredient [ingredient]="ingredient"></app-ingredient>
             </li>
           </ul>
         </div>

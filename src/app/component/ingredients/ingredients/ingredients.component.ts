@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {Ingredient} from "../../model/ingredient";
-import {IngredientService} from "../../service/ingredient/ingredient.service";
-import {MessageService} from "../../service/message/message.service";
+import {Ingredient} from "../../../model/ingredient";
+import {IngredientService} from "../../../service/ingredient/ingredient.service";
+import {MessageService} from "../../../service/message/message.service";
 
 @Component({
   selector: 'app-ingredients',
